@@ -42,4 +42,5 @@ jobs:
           EXTRA_KEYWORD: ${{ github.event.inputs.extra_keyword }}
         run: |
           cd backend/backend
+          
           python google_scraper.py

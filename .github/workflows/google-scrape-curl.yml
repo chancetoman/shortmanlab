@@ -31,9 +31,9 @@ jobs:
           pip install -r requirements.txt
           pip install curl_cffi
 
-      - name: Random initial sleep (0~3600s)
+      - name: Random initial sleep (0~1927s)
         run: |
-          SLEEP=$((RANDOM % 3600))
+          SLEEP=$((RANDOM % 1927))
           echo "Sleeping ${SLEEP} seconds before scrape..."
           sleep $SLEEP
 
